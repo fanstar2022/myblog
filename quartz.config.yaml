@@ -1,30 +1,66 @@
-# Quartz v5.0.0 Configuration
-# See https://quartz.jzhao.xyz for documentation
-
-pageTitle: "洋洋的博客"
-pageTitleSuffix: ""
-baseUrl: "myblog.eu.org"
-locale: "zh-CN"
-enableRecentNotes: true
-favicon: ""
-
-# Theme settings
-theme:
-  cdnCaching: true
-  typography:
-    header: "Schibsted Grotesk"
-    code: "Fira Code"
-    body: "Source Sans Pro"
-  colors:
-    lightMode:
-      light: "#faf8f8"
-      dark: "#2b2b2b"
-      gray: "#8e8e8e"
-      lightgray: "#f0f0f0"
-      darkgray: "#d4d4d4"
-    darkMode:
-      light: "#161618"
-      dark: "#ebebec"
-      gray: "#a4a4a4"
-      lightgray: "#212123"
-      darkgray: "#29292c"
+# yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
+configuration:
+  pageTitle: "洋洋的博客"
+  pageTitleSuffix: ""
+  enableSPA: true
+  enablePopovers: true
+  locale: zh-CN
+  baseUrl: "myblog.eu.org"
+  ignorePatterns:
+    - private
+    - templates
+    - .obsidian
+  theme:
+    fontOrigin: googleFonts
+    cdnCaching: true
+    typography:
+      header: Schibsted Grotesk
+      body: Source Sans Pro
+      code: IBM Plex Mono
+    colors:
+      lightMode:
+        light: "#faf8f8"
+        lightgray: "#e5e5e5"
+        gray: "#b8b8b8"
+        darkgray: "#4e4e4e"
+        dark: "#2b2b2b"
+        secondary: "#284b63"
+        tertiary: "#84a59d"
+        highlight: rgba(143, 159, 169, 0.15)
+        textHighlight: "#fff23688"
+      darkMode:
+        light: "#161618"
+        lightgray: "#393639"
+        gray: "#646464"
+        darkgray: "#d4d4d4"
+        dark: "#ebebec"
+        secondary: "#7b97aa"
+        tertiary: "#84a59d"
+        highlight: rgba(143, 159, 169, 0.15)
+        textHighlight: "#b3aa0288"
+plugins: []
+layout:
+  groups:
+    toolbar:
+      priority: 35
+      direction: row
+      gap: 0.5rem
+  byPageType:
+    "404":
+      positions:
+        beforeBody: []
+        left: []
+        right: []
+    content: {}
+    folder:
+      exclude:
+        - reader-mode
+      positions:
+        right: []
+    tag:
+      exclude:
+        - reader-mode
+      positions:
+        right: []
+    canvas: {}
+    bases: {}
