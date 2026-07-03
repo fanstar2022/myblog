@@ -1,0 +1,30 @@
+# Quartz v5.0.0 Configuration
+# See https://quartz.jzhao.xyz for documentation
+
+pageTitle: "洋洋的博客"
+pageTitleSuffix: ""
+baseUrl: "myblog.eu.org"
+locale: "zh-CN"
+enableRecentNotes: true
+favicon: ""
+
+# Theme settings
+theme:
+  cdnCaching: true
+  typography:
+    header: "Schibsted Grotesk"
+    code: "Fira Code"
+    body: "Source Sans Pro"
+  colors:
+    lightMode:
+      light: "#faf8f8"
+      dark: "#2b2b2b"
+      gray: "#8e8e8e"
+      lightgray: "#f0f0f0"
+      darkgray: "#d4d4d4"
+    darkMode:
+      light: "#161618"
+      dark: "#ebebec"
+      gray: "#a4a4a4"
+      lightgray: "#212123"
+      darkgray: "#29292c"
